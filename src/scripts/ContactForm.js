@@ -1,3 +1,4 @@
+import ContactCollection from '/.src/scripts/ContactCollection.js';
 // export default Object.create(null, {
 //     placeOrder: {
 //         value: (breadType, meat, cheese) => {
@@ -15,8 +16,8 @@
 
 let saveButton = document.getElementById("#saveButton")
 
-save.addEventListener("click", function(){
-    console.log("this is working")
+saveButton.addEventListener("click", function(){
 })
+console.log("this is working")
 
 
