@@ -1,11 +1,28 @@
-
 {
-"contacts": [ 
-  {
-  "id": 1,
-  "name": "",
-  "phone": "",
-  "address": ""
-}
-]
+  "contacts": [
+    {
+      "id": 0,
+      "name": "",
+      "phoneNumber": "",
+      "address": ""
+    },
+    {
+      "name": "Joe Brown",
+      "address": "500 Interstate Blvd",
+      "phoneNumber": "828-773-7777",
+      "id": 1
+    },
+    {
+      "name": "Joe Brown",
+      "address": "500 Interstate Blvd",
+      "phoneNumber": "828-773-7777",
+      "id": 2
+    },
+    {
+      "name": "Joe Brown",
+      "address": "500 Interstate Blvd",
+      "phoneNumber": "828-773-7777",
+      "id": 3
+    }
+  ]
 }

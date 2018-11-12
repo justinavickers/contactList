@@ -1,23 +1,26 @@
-import ContactCollection from '/.src/scripts/ContactCollection.js';
-// export default Object.create(null, {
-//     placeOrder: {
-//         value: (breadType, meat, cheese) => {
-//             console.log(`Here's your ${meat} sandwich with ${cheese} on ${breadType}`)
-//             console.table({
-//                 title: `${meat} sandwich`,
-//                 meat: meat,
-//                 cheese: cheese,
-//                 bread: breadType
-//             })
-//         }
-//     }
-// })
-
-
-let saveButton = document.getElementById("#saveButton")
-
-saveButton.addEventListener("click", function(){
-})
-console.log("this is working")
-
-
+import APIfunctions from "./ContactCollection"
+//fuction pulled from other pages
+function createInformation(){
+  //where we are targeting to get the values for the name address and phone number for our
+  //object to go to the API
+    const name= document.querySelector("#name")
+    const address= document.querySelector("#addressEntry")
+    const phoneNumber= document.querySelector("#phoneNumber")
+    //an empty object for us to fill putting into the API
+    let obj={
+      name: "",
+      address: "",
+      phoneNumber: ""
+    }
+    //filling the object with things we targeted
+    obj.name=(name.value)
+    obj.address=(address.value)
+    obj.phoneNumber=(phoneNumber.value)
+    //sending the object to the JSON with the POST function we made in contactCollection
+    APIfunctions.postContacts(obj)
+    .then(()=>{
+      location.reload()
+    })
+}
+//sending out the createInformation function
+export default createInformation

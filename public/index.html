@@ -7,27 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-        <fieldset>
-            <section id="name_box">
-                <label for="name_box">Name:</label>
-                <input id="name_box" name="name" type="text" autofocus placeholder="Name" />
-            </section>
-    
-            <section id="number_box">
-                <label for="number_box">Phone Number:</label>
-                <input id="number_box" name="number" type="text" autofocus placeholder="Phone Number" />
-            </section>
-    
-            <section id="address_box">
-                <label for="address_box">Address:</label>
-                <input id="address_box" name="address" type="text" autofocus placeholder="Address" />
-            </section>
-        </fieldset>
-        <button id="saveButton">Save</button>
-    
-        <h1>Contact List</h1>
-        <article class="output">
-        </article>
+    <article class="output">
+        <div>
+            <h3>Name</h3>
+            <input type="text" id= "name" value="Joe Brown">
+            <h3>phone number</h3>
+            <input type="text" id="phoneNumber" value="828-773-7777">
+            <h3>Address Entry</h3>
+            <input type="text" id="addressEntry" value= "500 Interstate Blvd"> 
+            <br>
+            <br>
+            <input type="button" id="submitButton" value="Submit Button">
+        </div>
+    <div>
+        <h1> Address book!</h1>
+        <div id="submit"></div>
+    </div>
+    </article>
     <script src="bundle.js"></script>
 </body>
 </html>

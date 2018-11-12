@@ -1,9 +1,11 @@
 //boilerplate that is going to list all contacts
-class Person {
-  constructor (props) {
-    this.name = props.name
-    this.number = props.number
-    this.address = props.address
-  }
-
+function contactDiv(contact) {
+let contacts=
+  `<div class="contact>
+  <h1> ${contact.name}</h1>
+  <p> ${contact.phoneNumber}</p>
+  <p> ${contact.address}</p>
+  </div>`
+  return contacts
 }
+export default contactDiv
